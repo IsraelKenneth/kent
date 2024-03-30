@@ -1,0 +1,315 @@
+
+.slider{
+  position: relative;
+  white-space: nowrap;
+}
+
+
+.slider p:nth-of-type(2){
+  position: absolute;
+  left: 100%;
+}
+
+
+
+/* About */
+
+.paragraph {
+  @apply flex lg:text-5xl xl:text-6xl text-2xl leading-none flex-wrap  ;
+}
+.paragraph .word {
+  @apply relative mr-3 mt-3;
+}
+.paragraph .word .shadow {
+  @apply absolute opacity-[20%];
+}
+
+
+
+
+
+/* Display */
+
+.column:nth-of-type(1) {
+  top: -45%;
+}
+
+.column:nth-of-type(2) {
+  top: -95%;
+}
+
+.column:nth-of-type(3) {
+  top: -45%;
+}
+
+.column:nth-of-type(4) {
+  top: -75%;
+}
+.spacer {
+  @apply h-screen;
+}
+
+
+/* Details */
+
+.homeHeader {
+  @apply relative w-full flex justify-center;
+}
+.backgroundImage {
+  @apply w-full h-[140vh] absolute brightness-[60%];
+}
+.backgroundImage img {
+  @apply object-cover;
+}
+.intro {
+  @apply flex justify-center relative mt-[35vh];
+}
+.intro h1 {
+  @apply text-[white] text-[7vw] z-[3] text-center whitespace-nowrap;
+}
+.introImage {
+  @apply brightness-[70%] w-[350px] h-[475px] absolute;
+}
+.introImage img {
+  @apply object-cover object-top;
+}
+
+
+/* Projects */
+
+.projects {
+  @apply relative text-[white] mt-[25vh] p-[10%];
+}
+.projectDescription {
+  @apply flex h-[700px] justify-between gap-[5%];
+}
+.imageContainer {
+  @apply relative h-full w-2/5;
+}
+.imageContainer img {
+  @apply object-cover;
+}
+.column {
+  @apply flex h-full w-1/5 text-[1.6vw] last-of-type:items-end last-of-type:text-[1vw];
+}
+.projectList {
+  @apply flex flex-col relative mt-[200px];
+}
+.projectEl {
+  @apply w-full text-[white] uppercase text-[3vw] flex justify-end border-b-[white] border-b border-solid;
+}
+.projectEl h2 {
+  @apply cursor-default mt-10 mb-5 m-0;
+}
+
+
+
+/* Works */
+
+.double {
+  @apply flex h-[45vw] mt-[10vh];
+}
+.double .imageContainer:nth-of-type(1) {
+  @apply w-[66.66%];
+}
+.double .imageContainer:nth-of-type(2) {
+  @apply w-[33.33%];
+}
+.double .imageContainer .stretchyWrapper {
+  @apply relative pb-[66%];
+}
+.double .imageContainer .stretchyWrapper img {
+  @apply object-cover;
+}
+.double:nth-child(even) .imageContainer:nth-of-type(1) {
+  @apply w-[33.33%];
+}
+.double:nth-child(even) .imageContainer:nth-of-type(2) {
+  @apply w-[66.66%];
+}
+.double .body {
+  @apply text-base p-2.5;
+}
+.double .body h3 {
+  @apply text-[1.2em] font-normal mt-0 mb-[5px];
+}
+.double .body p {
+  @apply text-[1em] text-[rgb(187,187,187)] m-0;
+}
+.double .body p:nth-of-type(2) {
+  @apply text-[rgb(101,101,101)];
+}
+
+
+
+/* Gallery */
+
+.contain {
+  @apply h-[300vh] relative ;
+}
+
+.contain .sticky .el {
+  @apply w-full h-full absolute flex items-center justify-center top-0;
+}
+.contain .sticky .el .imageContainer {
+  @apply relative w-[25vw] h-[25vh];
+}
+.contain .sticky .el .imageContainer img {
+  @apply object-cover;
+}
+.contain .sticky .el:nth-of-type(2) .imageContainer {
+  @apply top-[-30vh] w-[35vw] h-[30vh] left-[5vw];
+}
+.contain .sticky .el:nth-of-type(3) .imageContainer {
+  @apply top-[-10vh] left-[-25vw] w-[20vw] h-[45vh];
+}
+.contain .sticky .el:nth-of-type(4) .imageContainer {
+  @apply w-[25vw] h-[25vh] left-[27.5vw];
+}
+.contain .sticky .el:nth-of-type(5) .imageContainer {
+  @apply w-[20vw] h-[25vh] left-[5vw] top-[27.5vh];
+}
+.contain .sticky .el:nth-of-type(6) .imageContainer {
+  @apply left-[-22.5vw] w-[30vw] h-[25vh] top-[27.5vh];
+}
+.contain .sticky .el:nth-of-type(7) .imageContainer {
+  @apply w-[15vw] h-[15vh] left-[25vw] top-[22.5vh];
+}
+
+
+
+
+
+/* form  */
+
+.form-container {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.skills-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
