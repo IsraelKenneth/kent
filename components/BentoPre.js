@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Cyborg,gradient  } from "./asset";
 
 
-const Gradient = () => {
+export const Gradient = () => {
   return (
     <div className="absolute top-0 -left-[10rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
       <Image
-        className="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[79.5625rem] h-[88.5625rem] -translate-x-1/2 -translate-y-1/2"
+        className="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[30.5625rem] h-[28.5625rem] -translate-x-1/2 -translate-y-1/2"
         src={gradient}
         width={1417}
         height={1417}
@@ -18,6 +18,35 @@ const Gradient = () => {
 };
 
 
+
+
+export const Gradient2 = () => {
+  return (
+    <div className="absolute top-0 -left-[35rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
+      <Image
+        className="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[60.5625rem] h-[48.5625rem] -translate-x-1/2 -translate-y-1/2"
+        src={gradient}
+        width={1417}
+        height={1417}
+        alt="Gradient"
+      />
+    </div>
+  );
+};
+
+export const Gradient3 = () => {
+  return (
+    <div className="absolute top-0 -right-[35rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
+      <Image
+        className="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[60.5625rem] h-[48.5625rem] -translate-x-1/2 -translate-y-1/2"
+        src={gradient}
+        width={1417}
+        height={1417}
+        alt="Gradient"
+      />
+    </div>
+  );
+};
 const BentoPrev = () => {
   return (
 <section className="relative pt-12 padding-x overflow-hidden">
@@ -25,7 +54,7 @@ const BentoPrev = () => {
 <div className=" flex flex-wrap" data-scroll >
 
   <div className="relative items-center justify-center w-full flex flex-wrap md:mt-20 mt-10">
-  <div className="relative z-1 flex items-center  mb-5  h-[30rem] lg:w-[54rem] xl:w-[75%] md:w-[40rem] w-[26rem]  border-2 xl:h-[38rem] lg:p-20 rounded-3xl overflow-hidden  border-n-1/10 bg-opacity-10 backdrop-blur-lg backdrop-filter  shadow-lg">
+  <div className="relative z-1 flex items-center  mb-5  h-[30rem] lg:w-[54rem] xl:w-[75%] md:w-[40rem] w-[26rem]  border-2 xl:h-[38rem] lg:p-20 rounded-3xl overflow-hidden border-n-8/10 dark:border-n-1/10 bg-opacity-10 backdrop-blur-lg backdrop-filter  shadow-lg">
     <div className="md:opacity-100 opacity-5 absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
     <Image 
     className="w-full h-full object-cover md:object-right"
@@ -80,6 +109,7 @@ const BentoPrev = () => {
   </div>
 
   <Gradient />
+  <Gradient3 />
 
 </div>
 </section>

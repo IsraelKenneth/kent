@@ -5,7 +5,7 @@ import React, {useEffect, useState} from "react";
 
 import "./globals.css"
 
-import { Navbar, Footer, CustomCursor, Header,Skills, About, Works, Contact, ZoomParallax, Services, Blog, Hero, Barner, Carding, Header2, BentoPrev, HeroNav } from "@/components";
+import { Footer, CustomCursor, Header,Skills, About, Works, Contact, ZoomParallax, Services, Blog, Hero, HeroNav, D3dzn } from "@/components";
 import Display from "@/components/Display";
 import Testimonial from "@/components/Testimonial";
 import Loading from "@/components/extra/Loading";
@@ -42,12 +42,14 @@ const Home = () => {
         <>
         
           <CustomCursor />
+
+          <Nav />
             <div
-             className=""
+             className="overflow-hidden"
                 id="main-container"
                 data-scroll-container
             >
-            <Nav />
+            
             <div className="overflow-hidden dark:bg-herobg dark:bg-contain dark:bg-opacity-90 dark:bg-no-repeat">
               <HeroNav />
               <Hero />
@@ -59,17 +61,25 @@ const Home = () => {
 
               <Services />
 
-              <Skills />
+              
               
               <Display />
-          
+
+
               <ZoomParallax />
-              <Testimonial />
-              <BentoPrev />
+
+              <D3dzn />
+
 
               <HeroParallaxDemo />
               
               <Works />
+
+              <Skills />
+
+              <Testimonial />
+
+             
 
               <Blog />
               <Contact />

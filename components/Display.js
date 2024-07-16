@@ -8,6 +8,7 @@ import {  D2 as f1, Graph3 as f4, } from "./asset/Hero"
 import { f2, f3,f4 as f6, f10, f11, f12,  f5, f7, f8, f9 } from "./asset/dez"
 
 import "../trial/trial.css"
+import SectionHeader from "./SectionHeader"
 
 const images = [
  f1, f2, f3, f10, f11, f12, f4, f5, f6, f7, f8, f9
@@ -74,6 +75,11 @@ const resize = () => {
 
   return (
     <div className="min-h-screen padding ">
+
+    <div className="padding-x pb-16">
+    <SectionHeader title={'Graphic Designs'} />
+    </div>
+
     <div ref={container} className="h-[175vh] mx-auto items-center justify-center relative flex gap-[2vw] box-border overflow-hidden p-[2vw] bg-[rgb(205,204,204)]">
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[5]]} y={y2}/>

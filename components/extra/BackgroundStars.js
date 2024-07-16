@@ -50,7 +50,7 @@ export function cn(...inputs) {
     );
   
     return (
-      <div id="work" ref={ref} className="h-[230vh] xl:h-[320vh]  py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      <div id="work" ref={ref} className="h-[290vh] xl:min-h-[290vh]  py-40 lg:pt-[20rem] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
         <Header />
         <motion.div style={{ rotateX, rotateZ, translateY, opacity }} className="">
         <motion.div className="flex flex-row  mb-20 space-x-20 ">
@@ -80,7 +80,7 @@ export function cn(...inputs) {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
           <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-          The Pinnacle of  <br /> Creative Development Solutions
+          The Pinnacle of  <br /> Full-Stack Development
           </h1>
           <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
           Kent Design excels in crafting stunning products using cutting-edge technologies and frameworks. 

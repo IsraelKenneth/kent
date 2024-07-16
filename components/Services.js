@@ -1,54 +1,66 @@
-import { useEffect, useState } from 'react';
-import { services } from "@/constants"
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+
+import "../trial/trial.css"
+import { ServicesCard } from "./SkillsCard";
+
 import SectionHeader from "./SectionHeader"
-import ServicesCard from "./extra/ServicesCard"
-import { textVariant } from "@/utils/frame-motion"
-import { motion } from "framer-motion"
 
-const Services = () => {
+const ServicesScroll = () => {
 
-  const [isVisible, setIsVisible] = useState(false);
+  const firstText = useRef(null);
+  const secondText = useRef(null)
+  const slider = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutSection = document.getElementById('services');
-      if (aboutSection && !isVisible && aboutSection.getBoundingClientRect().top < window.innerHeight / 2) {
-        setIsVisible(true);
-      }
-    };
+  let xPercent = 0;
+  let direction = 1;
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isVisible]);
+  useEffect(() =>{
 
-  return (
-    <div id="services"
-    
-    >
-    <div className="h-full padding overflow-hidden items-center ">
-    <motion.div variants={textVariant()} className="lg:py-20 py-14">
-    <SectionHeader title={"SERVICES"} />
-    </motion.div>
-    
-    <motion.div 
-              initial={{ opacity: 0, x: 100 }}
-          animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.9 }} className="flex flex-wrap gap-10 mb-10 items-center justify-center">
-    {
-    services.map((service, index) => (
-        <ServicesCard key={index} 
-            title={service.title}
-            icon ={service.icon}
-            smalltxt={service.smalltxt}
-        />
-    ))
+    requestAnimationFrame(animation)
+  }, [])
+
+  const animation = () =>{
+    if(xPercent < -100){
+      xPercent = 0;
     }
-    
-    </motion.div>
-    
-    </div>
+    else if(xPercent > 0){
+      xPercent = -100;
+    }
+
+    gsap.set(firstText.current, {xPercent: xPercent})
+    gsap.set(secondText.current, {xPercent:xPercent})
+    xPercent += 0.01 * direction;
+    requestAnimationFrame(animation)
+  }
+  return (
+    <div className="relative flex overflow-hidden h-[14rem]">
+
+    <div className="absolute">
+        <div ref={slider} className="flex flex-row">
+          <div ref={firstText}>
+          <ServicesCard />
+          </div>
+          <div ref={secondText}>
+          <ServicesCard />
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }
+
+const Services = () => {
+  return (
+    <div className="overflow-hidden padding-y flex flex-col relative h-full " data-scroll >
+   <div className="padding-x py-6">
+    <SectionHeader title={'Services'} />
+    </div>
+    <ServicesScroll />
+    </div>
+  )
+}
+
 
 export default Services

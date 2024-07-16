@@ -6,5 +6,6 @@ import image5 from "./5.jpg"
 import image6 from "./6.jpg"
 import image7 from "./7.jpg"
 import design from "./design.jpg"
+import Dguy from "./3Dguy.png"
 
-export {image1, image2,design, image3, image4, image5, image6, image7}
+export {image1, image2,design, image3, image4, image5, image6, image7, Dguy}

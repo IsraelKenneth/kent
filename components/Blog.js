@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Blog1, Blog2, Blog3, Blog3s, Blog4, Blog4s, Blog5, Blog6 } from "./asset/blog"
 import Image from "next/image"
+import SectionHeader from "./SectionHeader"
 
 
 const Blog = () => {
@@ -8,10 +9,13 @@ const Blog = () => {
     <div className="flex justify-center items-center" id="blog">
 
  <div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
-    <div role="main" className="flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-semibold leading-9 text-center text-gray-800 dark:text-gray-50">This Week Blogs</h1>
-      <p className="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you&apos;re looking for random paragraphs, you&apos;ve come to the right place. When a random word or a random sentence isn&apos;t quite enough</p>
-    </div>
+
+
+ <SectionHeader
+    title="Blogs"
+    brief="If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough"
+/>
+
     <div className="lg:flex items-stretch md:mt-12 mt-8">
       <div className="lg:w-1/2">
         <div className="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
@@ -29,7 +33,7 @@ const Blog = () => {
                 </Link>
               </div>
             </div>
-            <Image src={Blog1} className="w-full" alt="chair" />
+            <Image src={Blog1} className="w-full rounded-3xl" alt="chair" />
           </div>
           <div className="sm:w-1/2 sm:mt-0 mt-4 relative">
             <div>
@@ -45,7 +49,7 @@ const Blog = () => {
                 </Link>
               </div>
             </div>
-            <Image src={Blog2} className="w-full" alt="Cross-platform" />
+            <Image src={Blog2} className="w-full rounded-3xl" alt="Cross-platform" />
           </div>
         </div>
         <div className="relative">
@@ -62,8 +66,8 @@ const Blog = () => {
               </Link>
             </div>
           </div>
-          <Image src={Blog4} alt="Next.js blog"  className="w-full mt-8 md:mt-6 hidden sm:block" />
-          <Image className="w-full mt-4 sm:hidden"  src={Blog4s} alt="Next.js blog" />
+          <Image src={Blog4} alt="Next.js blog"  className="w-full mt-8 md:mt-6 hidden sm:block rounded-3xl" />
+          <Image className="w-full mt-4 sm:hidden rounded-3xl"  src={Blog4s} alt="Next.js blog" />
         </div>
       </div>
       <div className="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
@@ -81,8 +85,8 @@ const Blog = () => {
               </Link>
             </div>
           </div>
-          <Image src={Blog3} alt="sitting place" className="w-full sm:block hidden" />
-          <Image className="w-full sm:hidden" src={Blog3s} alt="sitting place" />
+          <Image src={Blog3} alt="sitting place" className="w-full sm:block hidden rounded-3xl" />
+          <Image className="w-full sm:hidden" src={Blog3s} alt="sitting place rounded-3xl" />
         </div>
         <div className="sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
           <div className="relative w-full">
@@ -99,7 +103,7 @@ const Blog = () => {
                 </Link>
               </div>
             </div>
-            <Image src={Blog5} class="w-full" alt="chair" />
+            <Image src={Blog5} class="w-full rounded-3xl" alt="chair" />
           </div>
           <div className="relative w-full sm:mt-0 mt-4">
             <div>
@@ -115,7 +119,7 @@ const Blog = () => {
                 </Link>
               </div>
             </div>
-            <Image src={Blog6} className="w-full" alt="wall design" />
+            <Image src={Blog6} className="w-full rounded-3xl" alt="wall design" />
           </div>
         </div>
       </div>

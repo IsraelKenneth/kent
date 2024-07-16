@@ -108,7 +108,7 @@ const services = [
         smalltxt: "3D ",
     },
     {
-        title: "Graphic Works",
+        title: "Graphic Design",
         icon: GraphicDzn,
         smalltxt: "Graphics",
     },
@@ -437,7 +437,7 @@ const testimonials = [
             name: "Modesta Aziire",
             designation: "Youth development Advocate",
             company: "Ghana Commodity Exchange",
-            image: keb,
+            image: ke,
         },
         {
             testimonial:
@@ -453,7 +453,7 @@ const testimonials = [
             name: "Mary Immaculata ",
             designation: "Frontend Development ",
             company: "WALTERGATES GHANA LIMITED",
-            image: ke,
+            image: keb,
         },
     ]
   const navLinks = [

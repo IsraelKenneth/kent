@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { skills } from "@/constants"
+import { skills, services } from "@/constants"
 
 export const SkillsCard1 = (
 
@@ -301,3 +301,123 @@ export const SkillsCard2 = (
           </div>
     )
   }
+
+
+
+
+  export const ServicesCard = (
+
+  ) => {
+  
+    
+    return (
+      <div className=" mt-3 flex flex-row gap-6 w-full mr-6">
+      <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[0].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[0].title}</h4>
+              </div>
+          </div>
+
+          <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[1].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[1].title}</h4>
+              </div>
+          </div>
+
+          <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[2].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[2].title}</h4>
+              </div>
+          </div>
+
+          <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[3].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[3].title}</h4>
+              </div>
+          </div>
+
+          <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[0].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[0].title}</h4>
+              </div>
+          </div>
+
+          <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[1].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[1].title}</h4>
+              </div>
+          </div>
+
+          <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[2].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[2].title}</h4>
+              </div>
+          </div>
+
+          <div className="relative flex w-[15rem] !flex-row  items-center  rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
+              <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
+              <div className="rounded-full bg-lightPrimary p-3 dark:bg-navy-700">
+                  <span className="flex items-center text-brand-500 ">
+                  <Image src={services[3].icon} width={50} height={50}  alt="skills card"/>
+                  </span>
+              </div>
+              </div>
+              <div className="h-50 ml-4 flex w-auto flex-col justify-center">
+              <h4 className="text-md font-bold text-navy-700 text-black uppercase">{services[3].title}</h4>
+              </div>
+          </div>
+
+     
+          </div>
+
+          )
+}

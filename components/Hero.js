@@ -4,12 +4,13 @@ import React, { useEffect, useRef } from 'react';
 import { Application } from '@splinetool/runtime';
 import Section from './extra/Section';
 import { curve } from './asset';
-import {  BottomLine } from './extra/Hero';
+import {  BackgroundCircles, BottomLine } from './extra/Hero';
 import Image from 'next/image';
 import Barner from './extra/Barner';
 import "../app/globals.css"
 import { HeroScrollDemo } from './CurrentWorks';
 import Link from 'next/link';
+import { Gradient2, Gradient3 } from './BentoPre';
 
 
 
@@ -38,7 +39,7 @@ const Hero = () => {
 
   return (
     <Section
-      className="padding-x pt-[12rem] -mt-[5.25rem] border-b-2 border-stroke-1"
+      className="relative padding-x pt-[12rem] -mt-[5.25rem] border-b-2 border-stroke-1"
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
       id="home"
@@ -73,6 +74,8 @@ const Hero = () => {
 
         </div>
         
+        <Gradient2 />
+        <Gradient3 />
         </div>
                    
       <BottomLine />

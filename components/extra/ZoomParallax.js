@@ -4,6 +4,7 @@ import { useScroll, useTransform, motion} from 'framer-motion';
 import { useRef } from 'react';
 import { image1, image2, image3, image4, image5, image6, image7 } from '../asset/gallery';
 import "../../trial/trial.css"
+import SectionHeader from '../SectionHeader';
 
 const ZoomParallax = () => {
 
@@ -53,8 +54,19 @@ const ZoomParallax = () => {
     ]
 
   return (
-    <div ref={container} className='contain'>
-    <div className={'sticky overflow-hidden h-screen top-0'}>
+    <>
+    
+    <div className="padding-x pb-16">
+    <SectionHeader title={'Photography'} />
+    </div>
+    
+    
+    <div ref={container} className='contain overflow-hidden'>
+
+
+
+
+    <div className={'sticky  h-screen top-0'}>
         {
             pictures.map( ({src, scale}, index) => {
                 return <motion.div key={index} style={{scale}} className={'el'}>
@@ -71,6 +83,7 @@ const ZoomParallax = () => {
         }
     </div>
 </div>
+</>
   )
 }
 

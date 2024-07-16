@@ -30,7 +30,7 @@ const Header2 = () => {
 
     gsap.set(firstText.current, {xPercent: xPercent})
     gsap.set(secondText.current, {xPercent:xPercent})
-    xPercent += 0.00001 * direction;
+    xPercent += 0.01 * direction;
     requestAnimationFrame(animation)
   }
   return (
