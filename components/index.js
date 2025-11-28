@@ -27,6 +27,7 @@ import BentoPrev from "./BentoPre";
 
 import HeroNav from "./extra/HeroNav";
 
-import D3dzn from "./d3dzn";
+import D3dzn from "./D3dzn";
+
 
 export {About,Hero, BentoPrev, D3dzn, Skills,Header2,HeroNav,  Contact, Blog, Barner,  CustomCursor, Header, Navbar, Footer, Works, ZoomParallax, Services}
